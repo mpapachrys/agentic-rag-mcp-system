@@ -1,0 +1,9 @@
+langchain-openai 
+python-dotenv
+mcp-use
+asyncio
+psycopg2
+json
+chromadb
+pandas
+sentence_transformers 
