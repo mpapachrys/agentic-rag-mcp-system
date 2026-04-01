@@ -4,6 +4,9 @@ This project implements an intelligent agent system designed to automate the pro
 
 The architecture is built to classify emails, retrieve relevant product context, and then use the LLM to process the order by calling specific external tools (MCP servers) like a PostgreSQL database or a PDF exporter.
 
+## 👾 Tech stack: 
+Python, LangChain, ChromaDB, Sentence Transformers, PostgreSQL, MCP, OpenRouter (Gemini 2.5 Flash), asyncio, pandas, Docker-ready.
+
 ## 📁 Project Structure
 
 ```
