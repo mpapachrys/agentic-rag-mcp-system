@@ -1,13 +1,14 @@
-# 💡 Agentic RAG System with Model Context Protocol (MCP)
+#  Agentic RAG System with Model Context Protocol (MCP)
 
 This project implements an intelligent agent system designed to automate the processing of incoming emails, specifically focusing on **customer orders**. It combines a Large Language Model (LLM) with a **Retrieval-Augmented Generation (RAG)** pipeline and the **Model Context Protocol (MCP)** to provide a powerful, context-aware, and action-oriented AI workflow.
 
 The architecture is built to classify emails, retrieve relevant product context, and then use the LLM to process the order by calling specific external tools (MCP servers) like a PostgreSQL database or a PDF exporter.
 
-## 👾 Tech stack 
+##  Tech stack 
 Python, LangChain, ChromaDB, Sentence Transformers, PostgreSQL, MCP, OpenRouter (Gemini 2.5 Flash), asyncio, pandas, Docker-ready.
 
-## 📁 Project Structure
+
+##  Project Structure
 
 ```
 .
@@ -24,7 +25,8 @@ Python, LangChain, ChromaDB, Sentence Transformers, PostgreSQL, MCP, OpenRouter 
 └── requirements.txt           # Python dependency list.
 ```
 
-## 🚀 Key Technologies
+
+##  Key Technologies
 
 | Technology | Purpose |
 | :--- | :--- |
@@ -36,7 +38,8 @@ Python, LangChain, ChromaDB, Sentence Transformers, PostgreSQL, MCP, OpenRouter 
 | **PostgreSQL** | The source database for product data, accessed by both the RAG system and the MCP agent. |
 | **Node.js (`npx`)** | Required to run the external MCP Server tools (PostgreSQL, PDF) as separate processes. |
 
-## ⚙️ Prerequisites
+
+##  Prerequisites
 
 Before starting, ensure you have the following installed and configured:
 
@@ -45,7 +48,8 @@ Before starting, ensure you have the following installed and configured:
 3.  **PostgreSQL Database:** A running PostgreSQL instance with the product data available.
 4.  **OpenRouter API Key:** A valid key for the LLM integration.
 
-## 🛠️ Setup Instructions
+
+##  Setup Instructions
 
 ### 1\. Configure Environment Variables
 
@@ -80,7 +84,8 @@ python rag_setup.py
 
 *(If successful, you should see a new directory created at the path defined by `VECTOR_STORE_PATH` in your `.env` file.)*
 
-## ▶️ Running the Application
+
+##  Running the Application
 
 After completing the setup and initialization, you can run the main agent script.
 
