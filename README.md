@@ -1,3 +1,5 @@
+Our very first project with @DimitrisPapachrysanthou [link](https://github.com/DimitrisPapachrysanthou)
+
 #  Agentic RAG System with Model Context Protocol (MCP)
 
 ![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-v1.0-blue?style=for-the-badge)
