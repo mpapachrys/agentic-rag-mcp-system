@@ -1,4 +1,4 @@
-Our very first project with @DimitrisPapachrysanthou [link](https://github.com/DimitrisPapachrysanthou)
+Our very first project with [@DimitrisPapachrysanthou](https://github.com/DimitrisPapachrysanthou)
 
 #  Agentic RAG System with Model Context Protocol (MCP)
 
