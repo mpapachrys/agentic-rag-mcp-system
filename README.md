@@ -1,16 +1,29 @@
+#  Agentic RAG System with Model Context Protocol (MCP)
+
 ![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-v1.0-blue?style=for-the-badge)
 ![Agentic RAG](https://img.shields.io/badge/Agentic-RAG-orange?style=for-the-badge)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 
-#  Agentic RAG System with Model Context Protocol (MCP)
-
 This project implements an intelligent agent system designed to automate the processing of incoming emails, specifically focusing on **customer orders**. It combines a Large Language Model (LLM) with a **Retrieval-Augmented Generation (RAG)** pipeline and the **Model Context Protocol (MCP)** to provide a powerful, context-aware, and action-oriented AI workflow.
 
-The architecture is built to classify emails, retrieve relevant product context, and then use the LLM to process the order by calling specific external tools (MCP servers) like a PostgreSQL database or a PDF exporter.
+##  Architecture: Decoupled Agentic Workflow
 
-##  Tech stack 
-Python, LangChain, ChromaDB, Sentence Transformers, PostgreSQL, MCP, OpenRouter (Gemini 2.5 Flash), asyncio, pandas, Docker-ready.
+The core innovation of this system is the implementation of **MCP** to successfully **decouple tool execution from the agent logic**.
+
+
+
+### Why this matters:
+- **Separation of Concerns:** `main.py` manages the "Brain" (LLM reasoning), while separate MCP servers (Node.js/npx processes) manage the "Hands" (SQL execution, PDF generation).
+- **Scalability:** You can add new tools (like Slack or Jira) by simply updating `mcp_servers.json` without modifying the core agent logic.
+- **Robustness:** The RAG pipeline (`rag_setup.py`) operates as an independent service that feeds context into the agent, ensuring the LLM doesn't "hallucinate" product details.
+
+## 🛠️ Tech Stack
+- **LLM:** Google Gemini 2.0 Flash (via OpenRouter)
+- **Framework:** LangChain & mcp-use
+- **Vector Store:** ChromaDB
+- **Database:** PostgreSQL
+- **Embeddings:** Sentence Transformers (`paraphrase-multilingual-mpnet-base-v2`)
 
 
 ##  Project Structure
