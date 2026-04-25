@@ -1,3 +1,8 @@
+![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-v1.0-blue?style=for-the-badge)
+![Agentic RAG](https://img.shields.io/badge/Agentic-RAG-orange?style=for-the-badge)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+
 #  Agentic RAG System with Model Context Protocol (MCP)
 
 This project implements an intelligent agent system designed to automate the processing of incoming emails, specifically focusing on **customer orders**. It combines a Large Language Model (LLM) with a **Retrieval-Augmented Generation (RAG)** pipeline and the **Model Context Protocol (MCP)** to provide a powerful, context-aware, and action-oriented AI workflow.
