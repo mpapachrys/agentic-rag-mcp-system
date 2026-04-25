@@ -119,5 +119,5 @@ python main.py
 4.  **If `ORDER`:**
       * The `ProductSimilarityService` (RAG system) searches the ChromaDB vector store to find the most similar products mentioned in the email.
       * The LLM Agent is activated with the **original email content** and the **similar products context** (from RAG).
-      * The agent uses its tools (e.g., the `postgres` MCP server to check inventory or the `markdown2pdf` MCP server to generate a report) to complete the order processing logic.
+      * The agent uses its tools (e.g., the postgres MCP server to check real-time inventory or the markdown2pdf MCP server to generate a professional invoice/report)
 5.  **If `OTHER`:** A simple log message is output, and processing stops.
