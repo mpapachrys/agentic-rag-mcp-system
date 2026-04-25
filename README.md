@@ -18,7 +18,7 @@ The core innovation of this system is the implementation of **MCP** to successfu
 - **Scalability:** You can add new tools (like Slack or Jira) by simply updating `mcp_servers.json` without modifying the core agent logic.
 - **Robustness:** The RAG pipeline (`rag_setup.py`) operates as an independent service that feeds context into the agent, ensuring the LLM doesn't "hallucinate" product details.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **LLM:** Google Gemini 2.0 Flash (via OpenRouter)
 - **Framework:** LangChain & mcp-use
 - **Vector Store:** ChromaDB
