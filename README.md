@@ -1,5 +1,7 @@
 Project Status: Archived (September 2025)
+
 Note: This project was developed in late 2025 and is currently no longer maintained. While the architectural principles (MCP + RAG) remain solid, some dependencies and model references (e.g., Gemini 2.0/2.5 Flash) may have been superseded by newer releases.
+
 This was a collaborative first project with [@DimitrisPapachrysanthou](https://github.com/DimitrisPapachrysanthou).
 
 #  Agentic RAG System with Model Context Protocol (MCP)
